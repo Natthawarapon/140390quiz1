@@ -4,7 +4,27 @@
 
   <div class="jumbotron">
             <h1 class="display-3">Hello student</h1>
-           
+           <table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Firsname</th>
+            <th>Lastname</th>
+        </tr>
+    </thead>
+    <tbody>
+       <% users.forEach(function(users){ %> 
+       <tr>
+            <td scope="row"><%= users.id%></td>
+            <td><%=  users.email%></td>
+            <td><%=  users.password%></td>
+        </tr>
+         <% }); %>
+</tbody>
+ 
+    
+</table>
         </div>  
 
 
